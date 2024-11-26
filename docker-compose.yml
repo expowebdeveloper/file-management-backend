@@ -1,0 +1,24 @@
+services:
+  app:
+    image: python:3.12
+    container_name: fastapi_app
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - alembic
+    command: >
+      sh -c "pip install -r requirements.txt &&
+             uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+
+  alembic:
+    image: python:3.12
+    container_name: alembic_migrator
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+    command: >
+      sh -c "pip install -r requirements.txt &&
+             alembic upgrade head"
