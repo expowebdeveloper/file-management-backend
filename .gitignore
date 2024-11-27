@@ -1,0 +1,74 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.so
+*.dylib
+
+# C extensions
+*.c
+*.cpp
+*.h
+*.o
+*.a
+
+# Packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+.venv_*/   # Some IDEs use this convention for virtual environments
+
+# pyenv
+.python-version
+
+# pytest
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+*.dat
+
+# IDE or text editor folders
+.vscode/
+.idea/
+*.swp
+*~
+
+# FastAPI specific
+instance/
+.env
+*.sqlite3
+
+# MySQL / PostgreSQL
+*.sql
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# macOS system files
+.DS_Store
+
+# Linux system files
+*.swp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# FastAPI specific - logs (if you use logs)
+logs/
