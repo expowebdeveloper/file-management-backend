@@ -1,3 +1,5 @@
+# Define the content of the README file
+
 # FastAPI Document Management API
 
 This is a backend application for managing document listings using FastAPI. The API allows CRUD operations on documents stored in a SQLite database.
@@ -29,6 +31,35 @@ Ensure you have the following installed on your system:
 #### Using Docker Compose (Recommended)
 
 1. Clone the repository:
-   ```bash
-   https://github.com/expowebdeveloper/file-management-backend.git
+   ```
+   git clone https://github.com/expowebdeveloper/file-management-backend.git
    cd file-management-backend
+
+
+
+## Build and start the application:
+
+
+
+```
+docker-compose up --build
+```
+### Access the API documentation:
+
+Swagger UI: http://localhost:8000/docs 
+
+ReDoc: http://localhost:8000/redoc
+
+
+
+# API Documentation
+
+## Endpoints
+
+| Method | Endpoint                | Description                      |
+|--------|-------------------------|----------------------------------|
+| GET    | `/documents`             | List all documents              |
+| GET    | `/documents/{id}`        | Retrieve a specific document    |
+| POST   | `/documents`             | Create a new document           |
+| DELETE | `/documents/{id}`        | Delete a document               |
+

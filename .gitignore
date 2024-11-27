@@ -2,7 +2,7 @@
 *.pyc
 *.pyo
 *.pyd
-__pycache__
+__pycache__/
 *.so
 *.dylib
 
@@ -39,7 +39,6 @@ coverage.xml
 *.dat
 
 # IDE or text editor folders
-.vscode/
 .idea/
 *.swp
 *~
@@ -72,3 +71,7 @@ Desktop.ini
 
 # FastAPI specific - logs (if you use logs)
 logs/
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+branch_structure.json
